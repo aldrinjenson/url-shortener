@@ -10,7 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/aldrinjenson/url-shortener.git"
   },
-  "keywords": [],
+  "keywords": [
+    "node",
+    "url-shortener"
+  ],
   "author": "aldrinjenson",
   "license": "ISC",
   "bugs": {
