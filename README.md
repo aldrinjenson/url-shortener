@@ -17,7 +17,9 @@ A new build will be automatically generated and deployed using github-pages(You 
 ## FAQ
 
 Q: How is this a url shortener? It looks more like a url converter/redirecter
+
 A: URL Shortener is same as URL redirecter if the domain is smaller :)
+
 Just add a [shorter custom domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages) for github pages to make the redirect link even smaller
 
 ## Credits
