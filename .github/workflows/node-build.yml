@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x, 14.x, 16.x]
+        node-version: [14.x]
 
     steps:
       - uses: actions/checkout@v3
@@ -23,3 +23,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
       - run: node shortener.js
+  deploy:
+    uses: peaceiris/actions-gh-pages@v3
+    with:
+      github_token: ${{ secrets.GITHUB_TOKEN }}
+      publish_dir: ./build

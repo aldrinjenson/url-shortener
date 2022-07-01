@@ -1,0 +1,20 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "A url shortener which works without a server or a database!",
+  "main": "shortener.js",
+  "scripts": {
+    "build": "node shortener.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aldrinjenson/url-shortener.git"
+  },
+  "keywords": [],
+  "author": "aldrinjenson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aldrinjenson/url-shortener/issues"
+  },
+  "homepage": "https://github.com/aldrinjenson/url-shortener#readme"
+}
