@@ -1,5 +1,5 @@
-const urls = require("./urls.json");
 const fs = require("fs");
+const urls = require("./urls.json");
 const { generateTemplate } = require("./template");
 
 const buildFolder = "build";
