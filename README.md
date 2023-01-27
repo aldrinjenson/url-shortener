@@ -2,7 +2,7 @@
 
 A URL shortener which works without a server or a database!
 
-eg: https://aldrinjenson.me/url-shortener/secret/
+eg: https://aldrinjenson.github.io/url-shortener/secret/
 
 ## Usage
 
