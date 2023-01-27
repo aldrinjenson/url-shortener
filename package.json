@@ -4,6 +4,7 @@
   "description": "A url shortener which works without a server or a database!",
   "main": "shortener.js",
   "scripts": {
+    "start": "node shortener.js",
     "build": "node shortener.js"
   },
   "repository": {

@@ -16,13 +16,21 @@ if (fs.existsSync(buildFolder)) {
   });
 }
 
-urls.forEach(async ({ slug, url }) => {
-  const folderName = `${buildFolder}/${slug}`;
-  const fileName = `${folderName}/index.html`;
-
-  fs.mkdirSync(folderName);
-  const generatedHtml = generateTemplate({ url });
-  fs.writeFile(fileName, generatedHtml, () => {
-    console.log(`${slug} file written`);
+const copyFiles = () => {
+  urls.forEach(async ({ slug, url }) => {
+    const folderName = `${buildFolder}/${slug}`;
+    const fileName = `${folderName}/index.html`;
+    fs.mkdirSync(folderName);
+    const generatedHtml = generateTemplate({ url });
+    fs.writeFile(fileName, generatedHtml, () => {
+      console.log(`${slug} file written`);
+    });
   });
-});
+
+  fs.copyFile("static/index.html", "build/index.html", (err) => {
+    if (err) throw err;
+    else console.log("index.html written");
+  });
+};
+
+copyFiles();

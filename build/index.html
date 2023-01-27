@@ -1,0 +1,98 @@
+<html>
+
+<head>
+  <title>Custom URL Shortener</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #6CA0DC, #4F94CF, #3A87C2, #257AB5);
+      background-size: cover;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .subText {
+      margin-bottom: 50px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.98)
+    }
+
+    p {
+      font-size: 1.5em;
+      margin-bottom: 50px;
+      text-align: center;
+      color: #fff;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 3px;
+    }
+
+    a:hover {
+      color: #ddd;
+      border-bottom-color: #ddd;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .floating-element {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.2);
+      animation: floating 5s ease-in-out infinite;
+    }
+
+    @keyframes floating {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-20px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="floating-element" style="top: 20%; left: 10%;"></div>
+  <div class="floating-element" style="top: 40%; left: 20%;"></div>
+  <div class="floating-element" style="top: 60%; left: 30%;"></div>
+  <div class="floating-element" style="top: 80%; left: 40%;"></div>
+  <div class="container">
+    <h1>Static URL Shortener</h1>
+    <h3 class="subText">A URL shortener which works without a server or a database!</h3>
+    <p>Made by <a href="https://github.com/aldrinjenson">Aldrin Jenson</a></p>
+    <p>Check out source code on <a href="https://github.com/aldrinjenson/url-shortener">GitHub</a></p>
+  </div>
+</body>
+
+</html>
